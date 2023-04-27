@@ -22,12 +22,12 @@ export class RegisterService {
     async register(request: RegisterDto) {
         this.checkRequest(request);
         await this.prisma.$transaction(async (tx) => {
-            const exists = await tx.hb_users.findFirst({
+            const exists = await tx.users.findFirst({
                 where: {
                     email: request.email,
                 },
                 select: {
-                    hb_user_id: true,
+                    user_id: true,
                 }
             });
             if (exists) {
@@ -36,7 +36,7 @@ export class RegisterService {
                 })
             }
             const pwdHash = await argon2.hash(request.password);
-            await tx.hb_users.create({
+            await tx.users.create({
                 data: {
                     email: request.email,
                     password: pwdHash,

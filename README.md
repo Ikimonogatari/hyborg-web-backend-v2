@@ -26,7 +26,7 @@ NestJS Backend Template
 - Generate JWT Secret - openssl rand -base64 12
 
 ## Documentation
-Run in dev mode and open http://localhost:8000/docs
+Run in dev mode and open http://localhost:3000/docs
 
 ## Development
 

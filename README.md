@@ -17,10 +17,10 @@ NestJS Backend Template
 ## References
 - MVC Pattern - https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
 - NestJS Documentation - https://docs.nestjs.com
-- Prisma - https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres
-- Nest CLI - https://docs.nestjs.com/cli/overview
+- Prisma - https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-mysql
+- NestJS CLI - https://docs.nestjs.com/cli/overview
 - JWT Token - https://jwt.io/introduction
-- Nest Authentication - https://docs.nestjs.com/security/authentication
+- NestJS Authentication - https://docs.nestjs.com/security/authentication
 - NestJS Swagger (OpenAPI) Documentation - https://docs.nestjs.com/openapi/introduction
 - NestJS setup Prisma - https://docs.nestjs.com/recipes/prisma#set-up-prisma
 - Generate JWT Secret - openssl rand -base64 12
